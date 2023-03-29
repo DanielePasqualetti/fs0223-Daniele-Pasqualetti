@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+
+        <input type="text" placeholder="il tuo nome" name="nome">
+        <input type="text" placeholder="il tuo cognome" name="cognome">
+        <input type="email" required placeholder="la tua email" name="email">
+        <input type="password" placeholder="inserisci la password" name="psw">
+        <br>
+        <label for="consenso">
+            Acconsento al trattamento dei dati
+        </label>
+        <input required id="consenso" type="checkbox">
+        <hr>
+        <label for="m">maschio</label>
+        <input type="radio" id="m" name="sesso">
+
+        <label for="f">femmina</label>
+        <input type="radio" id="f" name="sesso">
+
+        <label for="x">non specificato</label>
+        <input type="radio" id="m" name="sesso">
+
+        <hr>
+
+        <select name="city">
+            <option value="">--Scegli--</option>
+            <option value="roma">Roma</option>
+            <option value="milano">Milano</option>
+        </select>
+
+        <textarea name="messaggio" cols="30" rows="10"></textarea>
+
+        <button>Invia</button>
+
+    </form>
+
+</body>
+</html>
