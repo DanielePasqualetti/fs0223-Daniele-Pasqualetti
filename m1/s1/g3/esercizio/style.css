@@ -1,0 +1,19 @@
+header{
+    text-align: center;
+}
+header img{
+    width: 200px;
+}
+.titoletto p{
+    color: #00636c;
+}
+.titoletto p span{
+    font-weight: 600;
+}
+.foto{
+    text-align: center;
+}
+main{
+    width: 50%;
+    margin: auto;
+}
