@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let anni = 30;
+        console.log(anni < 50);//true
+        console.log(anni > 50);//false
+        console.log(anni > 30);//false perchè 30 è uguale a 30
+        console.log(anni >= 30);//true
+        console.log(anni <= 30);//true
+        console.log(anni == 30);//true perchè sono uguali
+        console.log(anni != 30);//false perchè sono uguali
+        
+        console.log(anni == "30");//true perchè con valore uguale e tipo diverso
+        console.log(anni === "30");//false perchè sono diversi nel tipo di dato, anche se il valore sarebbe lo stesso
+        console.log(anni !== "30");//true perchè sono diversi nel tipo di dato
+        
+
+
+        //operatori logici ci permettono multiple combinazioni
+
+        //AND &&
+        console.log(anni >= 18 && anni <= 100);
+        console.log(anni >= 31 && anni <= 100);
+
+        //OR
+
+        let email = "info@esempio.it";
+        let username = "info";
+        console.log(email == "info@esempio.it" || username == "info");//true perchè entrambe sono vere
+        console.log(email == "info@esempio.it" || username == "mario");//true perchè almeno una delle due è vera
+
+        //utilizzo le parentesi per fai si che l'operazione al loro interno venga eseguita prima che l'operatore NOT abbia effetto
+        console.log( !(email == "info@esempio.it") )// prima esegue il booleano interno vero/falso e poi ne inverte il risultato
+
+
+        let dato = [];
+        console.log(Array.isArray(dato));//verifico se il dato è un array
+        console.log(!Array.isArray(dato));//verifico se il dato non è un array
+
+
+        
+
+    </script>
+
+
+
+
+
+</body>
+</html>
