@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //var non è soggetta a block scope
+
+        var a = 0
+        {
+            console.log(a);//raggiungibile perchè è una var ed è fuori dal blocco
+        }
+
+
+
+        {
+            var b = 0
+        }
+            console.log(a);//raggiungibile perchè è una var ed è dentro al blocco
+
+            //praticamente è sempre raggiungibile, è una variabile globale
+
+
+
+        //let è soggetta a block scope
+        let c = 1
+        {
+            console.log(c);//raggiungibile perchè è la var ed è fuori dal blocco
+        }
+
+
+        {
+            let d = 2
+        }
+        //console.log(d);//non visibile, perchè nasce e muore nel blocco
+
+
+        let e;//ora è globale
+        {
+            e = 10;//modifico la let globale
+        }
+        console.log(e);//10
+
+
+        //casi particolari
+
+        //var e = 8; l'identificatore e è già in uso sotto forma di let
+
+        var f = 9;
+        {
+            //console.log(f); la var f creata fuori dal blocco viene eliminata e non posso accedere alla bariabile f sottostante prima della sua inizializzazione
+            let f = 11;
+            console.log(f);//11
+        }
+        console.log(f);//9
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        //const
+
+        const NOME_UTENTE = "Mario";
+
+        //NOME_UTENTE = "Giacomo"; => errore perchè non può essere riassegnato
+
+        const OGGETTO = {
+            nome : "Mario",
+            anni : 30
+        }
+
+        //Object.freeze(OGGETTO); SE SI VOLESSERO BLOCCARE I RIASSEGNAMENTI ANCHE PER I VALORI DEGLI OGGETTI
+
+            OGGETTO.nome = "Maria"; //avviene il riassegnamento
+            console.log(OGGETTO);
+
+
+        //scope variabili nelle funzioni
+
+        let p = 0;
+        function prova(){
+            console.log(p);//raggiunge la variabile p
+        }
+
+        function prova2(){
+            let y = 200;
+        }
+        console.log(y);//non raggiungibile al di fuori del blocco
+
+
+
+    </script>
+
+</body>
+</html>
