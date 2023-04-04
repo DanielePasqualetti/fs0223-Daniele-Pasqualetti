@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="test"></div>
     <script>
 
         let obj = {};
@@ -17,7 +17,9 @@
             gusto : "margherita",
             prezzo : 5,
             mostraPrezzo : function() {
-                console.log(`la pizza ${this.gusto} costa ${this.prezzo} euro`);
+                let contenitore = document.getElementById("test")
+
+                contenitore.innerHTML = (`la pizza ${this.gusto} costa ${this.prezzo} euro`);
             }
         };
         //lettura di una proprietà
