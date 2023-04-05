@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let oldObj = new Object();//vecchio sistema
+        let obj = {};//da preferire
+        {
+        //le proprietà dell'oggetto pizza possono essere prese solo all'interno dell'oggetto stesso
+        let pizza ={
+            gusto : "Margherita",//coppia chiave-valore chiave gusto valore margherita
+            //gusto e prezzo si chiamano proprietà
+            prezzo : 5,//coppia chiave-valore chiave prezzo valore 5
+            aggiunte : {
+                doppiaMozzarella : 1,
+                basilico : 0.5,
+                },
+            mostraPrezzo : function() {
+                //le proprietà che contengono una funzione le chiamo metodo (giallo)
+                console.log(`Il prezzo della pizza ${this.gusto} è pari a ${this.prezzo} euro`);
+                }
+            }
+        //lettura
+        console.log(pizza.gusto);
+
+        //recupero il prezzo del basilico
+
+        console.log(pizza.aggiunte.basilico);
+
+
+        //scrittura
+        pizza.gusto = "4 formaggi";
+        console.log(pizza.gusto);
+    
+        //non posso scrivere tutto l'oggetto nel dom poichè fa una lettura con conversione a stringa
+        document.write(pizza);//[object Object]
+
+        //document.getElementById()//metodo
+        //alert()//funzione
+
+        //lancio di un metodo
+        pizza.mostraPrezzo();//le parentesi servono per eseguirlo
+        
+        }
+        
+        {
+
+            //costruttore degli oggetti
+            function Pizza(_gusto,_prezzo) {
+                this.gusto = _gusto;
+                this.prezzo = _prezzo;
+                this.mostraPrezzo = function() {
+                    console.log(`Il prezzo della pizza ${this.gusto} è pari a ${this.prezzo} euro`);
+                }
+            }
+
+            let margherita = new Pizza("Margherita",5);
+            let diavola = new Pizza("diavola",6);
+
+            console.log(margherita,diavola);//qui la funzione diventa oggetto tramite new
+
+            margherita.mostraPrezzo();
+            diavola.mostraPrezzo();
+
+
+            //aggiunta di una proprietà a tutti gli oggetti della classe Pizza, utilizzando la proprietà prototype
+            Pizza.prototype.aggiunte = {
+                    doppiaMozzarella : 1,
+                    basilico : 0.5
+            }
+            
+        }   
+    </script>
+</body>
+</html>
