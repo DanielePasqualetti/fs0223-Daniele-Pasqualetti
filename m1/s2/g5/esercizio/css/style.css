@@ -1,91 +1,127 @@
+
+/* GENERAL */
+
 *{
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
 }
-/* header */
-.bg{
-    background-color: #222f3f;
-    }
 
-#toplogo{
-        height: 2rem;
-        padding-left: 1.5rem;
-        padding-bottom: 0.5rem;
-    }
-#navigatore{
-    background-color: #364759;
-    padding-bottom: 0.3rem;
-    padding-top: 0.3rem;
-    font-size: 0.8rem;
+body{
+    background-color: #e9edee;
 }
 
 a{
-    color: white;
     text-decoration: none;
-    margin-left: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#primo{
-    margin-left: 1.5rem;
-}
-
-#arancione{
-    background-color: #f56600;
-    margin-top: 1.2rem;
+section{
+    height: 15rem;
     margin-bottom: 1.2rem;
-    height: 1.2rem;
-    text-align: center;
-    padding-top: 0.6rem;
-    color: white;
 }
 
-h3{
+h2{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* HEADER */
+.bgLogo{
+    background-color: #222f3f;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
+}
+
+.headerLogo{
+    height: 1.8rem;
+}
+
+.navBar{
+    background-color: #364759;
+    padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    padding-left: 1.5rem;
     font-size: 0.8rem;
 }
 
-#verde{
+.navBar a{
+    color: white;
+    margin-right: 0.8rem;
+}
+
+/* MAIN */
+main{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+main a{
+    color: #31828d;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.orangeBanner{
+    background-color: #f56600;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 100;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.greenBanner{
     background-image: url("../../elementi/assets/bg-image.png");
-    height: 9rem;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+}
+
+.greenBanner div{
     text-align: center;
 }
 
-h1{
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding-top: 3rem;
-}
-
-h4{
-    color: white;
-    font-weight: 600;
-    padding-top: 1rem;
-}
-
-.blue{
-    color: #31828d;
+.greenBanner div h1{
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
-.black{
-    color: black;
+.greenBanner div h4{
+    font-size: 0.8rem;
     font-weight: 600;
-    font-size: 1.2rem;
+    margin-top: 1.3rem;
 }
 
-#blocco{
+.fourImgBanner{
+    background-color: white;
+    padding: 1rem;
+}
+
+.fourImgBanner div{
     display: flex;
+}
+
+.blackText{
+    margin-right: 1rem;
+}
+
+.divContainer{
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.imgContainer{
     justify-content: space-between;
 }
 
-.riquadro{
-   width: 24%;
-}
-
-.riquadro img{
-    width: 100%;
-    height: 100%;
+.fourImg{
+    height: 14rem;
 }
