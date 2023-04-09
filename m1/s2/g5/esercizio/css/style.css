@@ -157,28 +157,26 @@ main a{
     background-position: center;
 }
 
-.oculusBanner{
-    height: 17rem;
+.imagesBanner{
+    height: 16.4rem;
     width: 100%;
-    background-image: url("../../elementi/assets/img_9.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;
+}
+
+.oculusImg{
+    background-image: url("../../elementi/assets/img_9.png");
+}
+
+.marshallImg{
+    background-image: url("../../elementi/assets/img_10.png");
 }
 
 .textBanner{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.marshallBanner{
-    height: 17rem;
-    width: 100%;
-    background-image: url("../../elementi/assets/img_10.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center top;
 }
 
 /* FOOTER */
