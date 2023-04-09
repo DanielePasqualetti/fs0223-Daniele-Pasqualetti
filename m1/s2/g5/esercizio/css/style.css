@@ -15,8 +15,8 @@ a{
 }
 
 section{
-    height: 15rem;
-    margin-bottom: 1.2rem;
+    height: 17rem;
+    margin-bottom: 1.7rem;
 }
 
 h2{
@@ -75,8 +75,8 @@ main a{
 
 .greenBanner{
     background-image: url("../../elementi/assets/bg-image.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
     height: 8rem;
     color: white;
     display: flex;
@@ -123,5 +123,89 @@ main a{
 }
 
 .fourImg{
-    height: 14rem;
+    height: 15.8rem;
+    width: 12rem;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.img1{
+    background-image: url("../../elementi/assets/img_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img2{
+    background-image: url("../../elementi/assets/img_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img3{
+    background-image: url("../../elementi/assets/img_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img4{
+    background-image: url("../../elementi/assets/img_4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.oculusBanner{
+    height: 17rem;
+    width: 100%;
+    background-image: url("../../elementi/assets/img_9.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+}
+
+.textBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marshallBanner{
+    height: 17rem;
+    width: 100%;
+    background-image: url("../../elementi/assets/img_10.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+}
+
+.topFooter{
+    background-color: #364759;
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+    margin-top: 2.2rem;
+}
+
+.topFooter a{
+    color: white;
+    text-decoration: underline;
+    font-size: 0.7rem;
+}
+
+.footerLogo{
+    background-color: #222f3f;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.footerLogo img{
+    height: 2.5rem;
 }
