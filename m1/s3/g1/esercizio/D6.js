@@ -127,6 +127,7 @@ console.log(reverseString("EPICODE"));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
