@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let now = new Date();
+
+        let anno = now.getFullYear();
+        let weekDay = now.getDay();//esce il numero del giorno della settimana 0/6 dove 0 è domenica
+
+        let giorni = [
+            "domenica",
+            "lunedi",
+            "martedi",
+            "mercoledi",
+            "giovedi",
+            "venerdi",
+            "sabato"
+        ]
+
+        console.log(giorni[weekDay]);//a differenza di sopra, cosi esce il giorno corrente
+
+
+        let monthDay = now.getMonth();//il conteggio parte da zero
+        
+        let time = now.getTime();//escono i millisecondi passati dal primo gennaio 1970
+    
+        console.log(anno, weekDay, monthDay, time);
+
+        now.setMonth(0);//da 0 a 11 se si va sopra 11 si passa di anno se si va sotto 0 va all'anno indietro
+        console.log(now);
+
+        //data ad un mese da oggi
+        let future = new Date();
+
+        future.setMonth(future.getMonth() + 1);
+
+        console.log(future);
+
+        //localizzare le date
+        let options = { weekDay: "longue", year: "numeric", month: "long", day: "numeric"}
+        let dataItaliano = future.toLocaleDateString("it-IT",options);
+        console.log(dataItaliano);
+
+    </script>
+</body>
+</html>

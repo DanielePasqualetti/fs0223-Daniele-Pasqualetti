@@ -126,7 +126,22 @@ console.log(reverseString("EPICODE"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function upperFirst(scioglilingua) {
+    let wordsArray = scioglilingua.split(" ");//divido tra loro le parole dove c'è lo spazio
+    let capitalizedWords = [];//creo un array vuoto che restituirò alla fine della funzione
+    for(let word of wordsArray){//ciclo l'array
 
+        let firstLetter = word[0].toUpperCase();//ottengo la prima lettera della parola che sto ciclando e la trasformo in maiuscolo
+        let parolaSenzaIniziale = word.slice(1);//prelevo la sottostringa della parola, contenente tutti i caratteri a partire dal secondo (compreso)
+        word = firstLetter + parolaSenzaIniziale;//concateno l'iniziale maiuscola con il resto della parola
+        capitalizedWords.push(word);//inserisco nell'array
+    }
+    return capitalizedWords.join(" ");
+}
+
+let risultato = upperFirst("sopra la panca la capra campa");
+
+console.log(risultato);
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere

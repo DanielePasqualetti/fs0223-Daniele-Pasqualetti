@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let persona1 = {
+            name: "John",
+            gender: "male",
+            age: 30
+        }
+
+        let persona2 = {
+            lastName: "Doe",
+            gender: "female",
+            height: 1.80
+        }
+
+        let personaCompleto = {
+            ...persona1,
+            ...persona2
+        }
+
+        console.log(personaCompleto);//name: "John", lastName: "Doe" , age: 30, height: 1.80, gender: "female" PERCHE' SOVRASCRIVE IL PRECEDENTE
+
+
+
+        //assegnamento in destrutturazione
+
+        let dati = ["Margherita", 5, true];
+
+        let [gusto, prezzo, disponibilità] = dati;
+
+        console.log(gusto);
+        console.log(prezzo);
+        console.log(disponibilità);
+
+        let personaX = {
+            name: "John",
+            lastName: "Doe",
+            gender: "male"
+        }
+
+        let {name, lastName, gender} = personaX;
+
+        console.log(name);
+        console.log(lastName);
+        console.log(gender);
+
+
+    </script>
+</body>
+</html>
