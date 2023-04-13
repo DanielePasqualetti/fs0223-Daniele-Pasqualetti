@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">Hello world!</div>
+    <div class="blocco">1</div>
+    <div class="blocco">2</div>
+    <div class="blocco">3</div>
+    <div class="blocco">4</div>
+
+    <ul id="menu">
+        <li>item</li>
+        <li>item</li>
+        <li class="no-bg">item</li>
+        <li>item</li>
+    </ul>
+
+    <ul>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <script>
+        {
+                //funzioni classiche per selezionare elementi del dom
+                let test = document.getElementById("test");
+
+                console.dir(test);
+                test.textContent = "Ciao mondo!";//modifico il contenuto testuale
+                test.style.backgroundColor = "red";//modifico la proprietà background color dello stile inline
+                test.style.backgroundColor = "";//facendo cosi svuoto il valore della proprietà backgroundColor
+
+                let blocchi = document.getElementsByClassName("blocco");
+                //restituisce una HTMLCollection, che non ha a disposizione molti metodi degli array
+                //utilizza Array.from() per ricavare un array normale
+                console.log(blocchi);
+
+
+                //ecco come modificare un singolo blocco
+                //blocchi[1].style.backgroundColor = "blue";
+
+                //ecco come modificare tutti i blocchi
+                for (let element of blocchi) {
+                    element.style.backgroundColor = "blue"
+                }
+
+                // Array.from(blocchi).forEach(function(element){
+                //     element.style.backgroundColor = "blue";
+                // })
+
+                //potete usare Array.from() in questo modo per poter utilizzare i metodi ciclici
+                // Array.from(blocchi).forEach(element => {
+                //     element.style.backgroundColor = "blue";
+                // })
+
+                //seleziono tutti i tag di tipo div
+                let div = document.getElementsByTagName("div");//restituisce sempre una HTMLCollection
+                console.log(div);
+            }
+
+        //funzioni nuove per selezionare elementi del dom
+
+            {
+                let test = document.querySelector("#test");//1 solo elemento
+                
+                let blocco1 = document.querySelector(".blocco");//1 solo elemento, il primo se parliamo di una lista
+
+                blocco1.style.color = "white";//colora solo il primo
+
+
+                let blocchi = document.querySelectorAll(".blocco");//Nodelist
+                //restituisce un array anche quando trova un solo elemento
+                //anche se non trova nulla restituisce un array vuoto
+                console.log(blocchi);
+
+                blocchi.forEach(element => element.style.border = "1px solid black")
+
+                //esempio di query di css più articolata
+                let li = document.querySelectorAll("#menu li:not(.no-bg)");
+
+                li.forEach(el => el.style.backgroundColor = "yellow");
+
+            }
+
+        </script>
+</body>
+</html>
