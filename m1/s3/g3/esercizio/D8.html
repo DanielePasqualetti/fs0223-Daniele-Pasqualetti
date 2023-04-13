@@ -100,8 +100,8 @@
        Scrivi una funzione per che cambi il testo dei p figli di un div
       */
     const changePcontent = function () {
-      let pcontent = document.querySelectorAll('div p');//creo la variabile a cui associare TUTTI i paragrafi figli di un div. quindi essendo un array lo devo ciclare per modificare tutti gli elementi
-      for (let i of pcontent) {//applica i ad ogni pcontent
+      let pContent = document.querySelectorAll('div p');//creo la variabile a cui associare TUTTI i paragrafi figli di un div. quindi essendo un array lo devo ciclare per modificare tutti gli elementi
+      for (let i of pContent) {//ciclo tutte le variabili pContent con una variabile che scelgo io
         i.textContent = 'Contenuto cambiato';//cambio entro dentro i e cambio il contenuto
       }
     }
@@ -156,9 +156,9 @@
        Scrivi una funzione che renda verde il background di ogni lista non ordinata
       */
     const paintItGreen = function () {
-      let greenBg = document.querySelectorAll('ul');
-      for (let i of greenBg) {
-        i.style.backgroundColor ='green';
+      let greenBg = document.querySelectorAll('ul');//creo una variabile che associo alla prima lista non ordinata
+      for (let i of greenBg) {//ciclo tutte le variabili greenBg con una variabile che scelgo io
+        i.style.backgroundColor ='green';//applico alla variabile del ciclo lo stile che voglio
       }
     }
     paintItGreen();
