@@ -193,9 +193,29 @@
     */
 
     const generateTable = function () {
-      let table = document.querySelector('#tableArea');
-      
+
+      let target = document.querySelector('#tableArea');
+
+      let tabella = document.createElement('table');
+      let thead = document.createElement('thead');
+      let primaTr = document.createElement('tr');
+
+      thead.append(primaTr);
+      tabella.append(thead);
+      target.append(tabella);
+
+      let colonne = ['immagine', 'nome prodotto', 'quantità', 'prezzo'];
+
+      for (let colonna of colonne) {
+        let th = document.createElement('th');
+        th.textContent = colonna;
+        primaTr.append(th);
     }
+
+    
+  }
+
+    generateTable();
 
     /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
