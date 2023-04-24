@@ -34,15 +34,17 @@
 
     <main>
         <article class="clearfix">
-            <h1>Come creare un template per i post </h1>
+                <h1>Come creare un <span class="baffo">template per i post <img class="underlineImg" src="./assets/img/underline.svg"</span></h1>
+                <img class="underlineImg" src="./assets/img/underline.svg" alt="sottolineatura">
             <p><i class="fas fa-pen-square"></i> di Mario Rossi - <span><i class="fas fa-clock"></i> pubblicato il
                     25-10-2020</span></p>
-            <img src="./assets/img/badge.png" class="imgLeft" alt="logo Html5" width="70" height="70">
-            <p> La prima cosa
-                da
-                fare è suddividere in blocchi logici la pagina, identificando le <strong>parti comuni</strong> da
-                applicare a tutte le pagine</p>
-
+                <div>
+                    <img src="./assets/img/badge.png" class="imgLeft" alt="logo Html5" width="70" height="70">
+                    <p> La prima cosa
+                    da
+                    fare è suddividere in blocchi logici la pagina, identificando le <strong>parti comuni</strong> da
+                    applicare a tutte le pagine</p>
+                </div>
             <p>Le varie aree saranno quindi suddivise in:</p>
             <ul>
                 <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
@@ -110,9 +112,10 @@
                 allowfullscreen></iframe>
 
             <section>
-                <h2>Novità</h2>
-                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
-
+                <div class="container">
+                    <h2 class="news">Novità</h2>
+                    <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+                </div>
                 <form method="POST" action="elabora_form.php">
                     <fieldset>
                         <input type="email" name="user_email" id="user_email" placeholder="inserisci l'email" required>
