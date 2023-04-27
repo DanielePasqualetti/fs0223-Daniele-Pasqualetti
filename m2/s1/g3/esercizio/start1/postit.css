@@ -1,0 +1,139 @@
+*{
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-display: swap;
+}
+/*! GRANDEZZA CARATTERI */
+h4{
+    font-size: 50px;
+}
+
+p{
+    font-size: 30px;
+}
+
+/*! LAVAGNA */
+.lavagna{
+    width: 1200px;
+    height: 550px;
+    background-color: #666666;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*! POSTIT + TRANSIZIONI */
+.postit{
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 3px 3px 5px;
+}
+
+.giallo{
+    background-image: linear-gradient(#fafbc9,#fafbc9,#fafbc9,#fafbc9, #bdbda3);
+    rotate: -5deg;
+    transition: transform 500ms, scale 500ms;
+}
+
+.verde{
+    background-image: linear-gradient(#c8f8ca,#c8f8ca,#c8f8ca,#c8f8ca, #9eb5a1);
+    rotate: 5deg;
+    transition: transform 500ms, scale 500ms;
+}
+
+.lilla{
+    background-image: linear-gradient(#c7c7f4,#c7c7f4,#c7c7f4,#c7c7f4,#8b8c9b);
+    rotate: -10deg;
+    transition: transform 500ms, scale 500ms;
+}
+
+.giallo:hover{
+    transform: rotate(5deg);
+    scale: 1.3;
+}
+
+.verde:hover{
+    transform: rotate(-5deg);
+    scale: 1.3;
+}
+
+.lilla:hover{
+    transform: rotate(10deg);
+    scale: 1.3;
+}
+
+.p1{
+    animation-name: splatAnimation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    z-index: 1;
+}
+
+.p2{
+    animation-name: splatAnimation;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    z-index: 2;
+}
+
+.p3{
+    animation-name: splatAnimation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    z-index: 3;
+}
+
+.p4{
+    animation-name: splatAnimation;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    z-index: 4;
+}
+
+.p5{
+    animation-name: splatAnimation;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    z-index: 5;
+}
+
+.p6{
+    animation-name: splatAnimation;
+    animation-duration: 1s;
+    animation-delay: 6s;
+    z-index: 6;
+}
+
+.p7{
+    animation-name: splatAnimation;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    z-index: 7;
+}
+
+.p8{
+    animation-name: splatAnimation;
+    animation-duration: 1s;
+    animation-delay: 8s;
+    z-index: 8;
+}
+
+/*! CENTRAMENTO */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*! ANIMAZIONE INIZIALE */
+@keyframes splatAnimation {
+    from {scale: 10;}
+    to {scale: 1;}
+}
