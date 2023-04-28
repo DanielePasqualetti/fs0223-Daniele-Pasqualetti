@@ -41,7 +41,7 @@ ul button{
     background-color: #ffc017;
         color: #191919;
         border-bottom: 1px solid #191919;
-        padding: 0 10%;
+        padding-left:10%;
         display: flex;
         justify-content: space-between;
 }
@@ -195,16 +195,32 @@ h4{
     margin-top: 8px;
 }
 
+#lastRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fullText{
+    flex-grow: 1;
+}
+
 /*! PSEUDOFOOTER */
 .pseudoFooter{
     width: 400px;
+}
+
+.pseudoFooter h4{
+    position: sticky;
+    top: 75px;
 }
 
 .articlesTypes{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 25px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 100px;
 }
 
 .articlesTypes div{
@@ -220,6 +236,8 @@ h4{
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
+    position: sticky;
+    top: 295px;
 }
 
 .pseudoFooter li{
