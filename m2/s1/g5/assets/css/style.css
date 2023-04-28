@@ -1,0 +1,66 @@
+/*! NAVBAR */
+nav{
+    background-color: #ffc017;
+    color: #191919;
+    border-bottom: 1px solid #191919;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navButtons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav li{
+    margin: 20px;
+}
+
+ul button{
+    padding: 8px 20px;
+    border-radius: 60px;
+    border: none;
+    background-color: #191919;
+    color: white;
+}
+
+/*! HERO */
+.hero{
+    background-color: #ffc017;
+        color: #191919;
+        border-bottom: 1px solid #191919;
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-between;
+}
+
+.leftHero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero h1{
+    font-size: 5rem;
+}
+
+.hero h2{
+    font-size: 1.5rem;
+}
+
+.hero button{
+    width: 150px;
+    padding: 8px 20px;
+    border-radius: 60px;
+    border: none;
+    background-color: #191919;
+    color: white;
+}
