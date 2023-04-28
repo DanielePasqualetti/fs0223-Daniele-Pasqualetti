@@ -141,11 +141,12 @@ h4{
     margin-bottom: 30px;
 }
 
-/*! ARTICOLI E PSEUDOFOOTER */
+/*! ARTICOLI */
 .bottomPage{
     padding: 0 10%;
     display: flex;
     justify-content: space-between;
+    margin-top: 60px;
 }
 
 .allArticles{
@@ -163,7 +164,7 @@ h4{
     width: 600px;
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .little{
@@ -191,4 +192,24 @@ h4{
 .opaco{
     opacity: 0.7;
     margin-top: 8px;
+}
+
+/*! PSEUDOFOOTER */
+.pseudoFooter{
+    width: 500px;
+}
+
+.articlesTypes{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.articlesTypes div{
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px 10px 5px 0px;
+    opacity: 0.7;
 }
