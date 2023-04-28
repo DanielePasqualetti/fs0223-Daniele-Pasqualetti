@@ -64,3 +64,50 @@ ul button{
     background-color: #191919;
     color: white;
 }
+
+/*! TRENDSECTION */
+.trend{
+    padding: 30px 10%; 
+}
+
+.trend article{
+    display: flex;
+}
+
+section img{
+    border-radius: 100%;
+    scale: 0.5;
+}
+
+.numb{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgTitle{
+    display: flex;
+    align-items: center;
+}
+
+article p span{
+    position: absolute;
+    margin-top: 10px;
+}
+
+h4{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.rightSide > p{
+    opacity: 0.5;
+}
+
+.numb{
+    opacity: 0.2;
+}
