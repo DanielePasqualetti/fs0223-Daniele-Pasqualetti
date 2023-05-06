@@ -1,0 +1,133 @@
+/*! NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 2%;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav button{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav ul li input{
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+nav li{
+    padding: 0 10px;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0 5px;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #595959;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: black;}
+
+/*! FINE NAVBAR */
+
+/*! SECONDA "NAV" */
+.show{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 2%;
+}
+
+.dropbtn2 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+  }
+  
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content2 a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: medium;
+  }
+  
+  .dropdown-content2 a:hover {background-color: #595959;}
+  
+  .dropdown2:hover .dropdown-content2 {display: block;}
+  
+  .dropdown2:hover .dropbtn2 {background-color: black;}
+
+  .show ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  .show .left li{
+    color: white;
+    font-size: 30px;
+    padding: 5px 17px;
+  }
+
+  .right{
+    padding: 0 15px;
+  }
+
+  .right button{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+  }
