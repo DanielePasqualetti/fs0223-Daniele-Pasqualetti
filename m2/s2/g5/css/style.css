@@ -196,6 +196,7 @@ footer{
   flex-direction: column;
   align-items: center;
   margin: 100px 0 20px;
+  opacity: 0.4;
 }
 
 footer div{
@@ -236,4 +237,13 @@ footer div i{
 
 .table a{
   margin-top: 15px ;
+}
+
+/*! ANIMAZIONI */
+img:hover{
+  scale: 1.2;
+}
+
+img{
+  transition: scale 500ms;
 }
