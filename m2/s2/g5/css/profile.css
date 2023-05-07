@@ -1,0 +1,55 @@
+body{
+    background-color: #141414;
+    color: white;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+body>img{
+    width: 100px;
+}
+
+.profilo{
+    max-width: 100%;
+}
+
+.tendina{
+    border: 1px solid white;
+    background-color: #141414;
+    color: white;
+}
+
+.bottone{
+    background-color: #141414;
+    color: #4e4e4e;
+    border: 1px solid #4e4e4e;
+}
+
+.grigioChiaro{
+    background-color: #666666;
+}
+
+.grigio{
+    background-color: #333333;
+}
+
+.big{
+    scale: 3;
+}
+
+.checkbox{
+    margin-bottom: 25px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.grosso{
+    padding: 10px 30px; 
+}
+
+.bottone:active{
+    color: #141414;
+    background-color: white;
+}

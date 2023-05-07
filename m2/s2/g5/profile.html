@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netflix profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/profile.css">
+  </head>
+  <body class="h-100">
+    <img src="./img/logo.png" alt="Netflix">
+<div class="d-flex justify-content-center align-items-center">
+    <div class="container col-6">
+            <h1 class="border-bottom">Edit Profile</h1>
+        <div class="row">
+            <div class="col-4 mt-3">
+                <img class="profilo rounded" src="./img/utente.png" alt="foto utente">
+            </div>
+            <div class="col-7 mt-3">
+                <div class="fs-5 p-2 grigioChiaro">Strive Student</div>
+                <div>
+                    <p class="fs-5 mt-3">Language:</p>
+                    <div class="dropdown pb-4 border-bottom">
+                        <button class="tendina  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          English
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Italiano</a></li>
+                          <li><a class="dropdown-item" href="#">Español</a></li>
+                          <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <p class="fs-5 mt-3">Maturity Settings:</p> 
+                <span class="my-3 p-2 grigio">
+                    ALL MATURITY RATINGS
+                </span>
+                <p class="fs-6 my-3">Show titles of <span class="fw-bold"> all maturity ratings</span> for this profile.</p>
+                <div class="border-bottom pb-4">
+                    <button class="bottone px-4 py-1">EDIT</button>
+                </div>
+                <p class="fs-5 mt-3">Autoplay controls</p>
+                <div class="d-flex flex-column">
+                    <div class="d-flex checkbox">
+                        <input class="big" type="checkbox"><p class="mb-0 ps-3">Autoplay next episode in a series on all devices.</p>
+                    </div>
+                    <div class="d-flex checkbox">
+                        <input class="big" type="checkbox"><p class="mb-0 ps-3">Autoplay previews while browsing on all device.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-top d-flex justify-content-between pe-4">
+            <button class="bottone grosso mt-4">SAVE</button>
+            <button class="bottone grosso mt-4">CANCEL</button>
+            <button class="bottone grosso mt-4">DELETE PROFILE</button>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
