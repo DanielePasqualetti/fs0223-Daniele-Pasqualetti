@@ -1,0 +1,27 @@
+[
+  {
+    "nome": "Daniele",
+    "cognome": "Pasqualetti",
+    "pizza": "Diavola"
+  },
+  {
+    "nome": "Nicolò",
+    "cognome": "Amato",
+    "pizza": "Boscaiola"
+  },
+  {
+    "nome": "Mariachiara",
+    "cognome": "Salis",
+    "pizza": "Napoli"
+  },
+  {
+    "nome": "Francesca",
+    "cognome": "Carella",
+    "pizza": "Margherita"
+  },
+  {
+    "nome": "Guido",
+    "cognome": "Mallamace",
+    "pizza": "4 stagioni"
+  }
+]
