@@ -1,1 +1,207 @@
-<p>registrati works!</p>
+<form
+  [formGroup]="registerForm"
+  (ngSubmit)="registerSubmited()"
+  class="border p-3 rounded-3"
+>
+  <div class="row g-0"></div>
+  <!-- nome e cognome -->
+  <div class="row">
+    <!-- nome -->
+    <div class="col mb-3">
+      <label for="firstname" class="form-label">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstname"
+        formControlName="firstname"
+      />
+      <div
+        class="form-text text-danger"
+        *ngIf="FirstName.errors?.['required'] && (FirstName.touched || FirstName.dirty)"
+      >
+        Inserisci il tuo nome.
+      </div>
+      <div
+        class="form-text text-danger"
+        *ngIf="FirstName.errors?.['minLenght'] && (FirstName.touched || FirstName.dirty)"
+      >
+        Il nome deve contenere almeno 2 caratteri.
+      </div>
+      <div
+        class="form-text text-danger"
+        *ngIf="FirstName.errors?.['pattern'] && (FirstName.touched || FirstName.dirty)"
+      >
+        Il nome non può contenere numeri.
+      </div>
+    </div>
+    <!-- cognome -->
+    <div class="col mb-3">
+      <label for="lastname" class="form-label">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lastname"
+        formControlName="lastname"
+      />
+      <div
+        class="form-text text-danger"
+        *ngIf="LastName.errors?.['required'] && (LastName.touched || LastName.dirty)"
+      >
+        Inserisci il tuo cognonome.
+      </div>
+      <div
+        class="form-text text-danger"
+        *ngIf="LastName.errors?.['minLenght'] && (LastName.touched || LastName.dirty)"
+      >
+        Il cognonome deve contenere almeno 2 caratteri.
+      </div>
+      <div
+        class="form-text text-danger"
+        *ngIf="LastName.errors?.['pattern'] && (LastName.touched || LastName.dirty)"
+      >
+        Il cognonome non può contenere numeri.
+      </div>
+    </div>
+  </div>
+  <!-- email -->
+  <div class="row">
+    <div class="col mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        formControlName="email"
+      />
+      <div
+        class="form-text text-danger"
+        *ngIf="Email.errors?.['required'] && (Email.touched || Email.dirty)"
+      >
+        Email necessaria.
+      </div>
+      <div
+        class="form-text text-danger"
+        *ngIf="Email.errors?.['email'] && (Email.touched || Email.dirty)"
+      >
+        Email non valida.
+      </div>
+    </div>
+  </div>
+  <!-- telefono e sesso -->
+  <div class="row">
+    <!-- telefono -->
+    <div class="col mb-3">
+      <label for="mobile" class="form-label">Telefono</label>
+      <input
+        type="text"
+        class="form-control"
+        id="mobile"
+        formControlName="mobile"
+      />
+      <div
+        class="form-text text-danger"
+        *ngIf="Mobile.errors?.['required'] && (Mobile.touched || Mobile.dirty)"
+      >
+        Numero di telefono necessario.
+      </div>
+
+      <div class="form-text text-danger" *ngIf="Mobile.errors?.['pattern']">
+        Numero di telefono non valido.
+      </div>
+
+      <div
+        class="form-text text-danger"
+        *ngIf="Mobile.errors?.['minLenght'] && (Mobile.touched || Mobile.dirty)"
+      >
+        Numero di telefono troppo corto.
+      </div>
+
+      <div
+        class="form-text text-danger"
+        *ngIf="Mobile.errors?.['maxLenght'] && (Mobile.touched || Mobile.dirty)"
+      >
+        Numero di telefono troppo lungo.
+      </div>
+    </div>
+
+    <!-- sesso -->
+    <div class="col ps-3 mb-3">
+      <div class="m-1">Sesso</div>
+      <div class="form-check form-inline">
+        <input
+          type="radio"
+          class="form-input"
+          value="m"
+          id="male"
+          formControlName="gender"
+        />
+        <label for="male" class="form-check-label">Uomo</label>
+      </div>
+      <div class="form-check form-inline">
+        <input
+          type="radio"
+          class="form-input"
+          value="f"
+          id="female"
+          formControlName="gender"
+        />
+        <label for="female" class="form-check-label">Donna</label>
+      </div>
+
+      <div class="form-text text-danger" *ngIf="Gender.errors?.['required']">
+        Seleziona il sesso.
+      </div>
+    </div>
+  </div>
+  <!-- password -->
+  <div class="row">
+    <div class="col mb-3">
+      <label for="pwd" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="pwd"
+        formControlName="pwd"
+      />
+      <div
+        class="form-text text-danger"
+        *ngIf="PWD.errors?.['required'] && (PWD.touched || PWD.dirty)"
+      >
+        Inserisci una Password.
+      </div>
+      <div
+        class="form-text text-danger"
+        *ngIf="(PWD.errors?.['minLenght'] || PWD.errors?.['maxLenght']) && (PWD.touched || PWD.dirty)"
+      >
+        La Password deve avere tra i 6 ed i 15 caratteri.
+      </div>
+    </div>
+
+    <div class="col mb-3">
+      <label for="rpwd" class="form-label">Ripeti Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="rpwd"
+        formControlName="rpwd"
+      />
+      <div class="form-text text-danger" [ngStyle]="{ display: repeatPass }">
+        La password non corrisponde.
+      </div>
+    </div>
+  </div>
+  <!-- bottone -->
+  <div class="row">
+    <div class="col-6 offset-3">
+      <div class="d-grid">
+        <button
+          type="submit"
+          [disabled]="registerForm.invalid"
+          class="btn btn-primary"
+        >
+          Iscriviti
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
